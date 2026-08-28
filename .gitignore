@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node.js dependencies and build output
+node_modules/
+dist/
+build/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
