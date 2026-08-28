@@ -93,6 +93,39 @@ nav a,
   text-transform: uppercase;
 }
 
+.header-tools,
+.language-switch {
+  display: flex;
+  align-items: center;
+}
+
+.header-tools {
+  gap: 1.25rem;
+}
+
+.language-switch {
+  gap: 0.5rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--line);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+.language-switch a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.language-switch span[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.language-switch a:hover,
+.language-switch a:focus-visible {
+  color: var(--accent);
+}
+
 nav a:hover,
 nav a:focus-visible,
 .header-link:hover,
@@ -453,9 +486,34 @@ a:focus-visible {
   outline-offset: 4px;
 }
 
+html[lang="zh-CN"] body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+html[lang="zh-CN"] h1,
+html[lang="zh-CN"] .achievement-summary strong,
+html[lang="zh-CN"] .publication-main h3,
+html[lang="zh-CN"] .expertise-list h3,
+html[lang="zh-CN"] .work-list h3,
+html[lang="zh-CN"] .profile-copy .profile-lead,
+html[lang="zh-CN"] .approach-list strong {
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+}
+
+html[lang="zh-CN"] .overline,
+html[lang="zh-CN"] .identity > p:last-of-type,
+html[lang="zh-CN"] .section-header,
+html[lang="zh-CN"] .publication-meta,
+html[lang="zh-CN"] .conference,
+html[lang="zh-CN"] .expertise-list article > span,
+html[lang="zh-CN"] .work-index,
+html[lang="zh-CN"] .work-status {
+  letter-spacing: 0.04em;
+}
+
 @media (max-width: 850px) {
   .site-header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
   }
 
   .header-link {
@@ -512,6 +570,16 @@ a:focus-visible {
   .site-header {
     display: block;
     padding: 0.8rem 1rem;
+  }
+
+  .header-tools {
+    justify-content: flex-end;
+    margin-top: 0.7rem;
+  }
+
+  .language-switch {
+    padding-left: 0;
+    border-left: 0;
   }
 
   nav {
