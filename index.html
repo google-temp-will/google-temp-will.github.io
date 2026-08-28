@@ -3,104 +3,237 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
     <meta
       name="description"
-      content="William's personal learning page for HTML, CSS and Python."
+      content="William's academic and technical portfolio: Python, published powertrain research and mechanical engineering at a global top-40 university."
     >
-    <title>William | Learning HTML, CSS and Python</title>
 
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #ffffff;
-        color: #050505;
-      }
+    <meta property="og:title" content="William | Academic &amp; Technical Portfolio">
+    <meta
+      property="og:description"
+      content="Python developer, published researcher and mechanical engineering undergraduate at a global top-40 university."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://google-temp-will.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="William | Academic &amp; Technical Portfolio">
+    <meta
+      name="twitter:description"
+      content="Python developer, published researcher and mechanical engineering undergraduate at a global top-40 university."
+    >
 
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        min-width: 320px;
-        min-height: 100vh;
-        margin: 0;
-      }
-
-      main {
-        display: flex;
-        min-height: 100vh;
-        align-items: flex-start;
-        padding: clamp(4rem, 14vh, 7.25rem) clamp(1.5rem, 10vw, 8.5rem);
-      }
-
-      .intro {
-        width: min(100%, 920px);
-        border-left: 10px solid #ff1010;
-        padding: 0.25rem 0 0.2rem clamp(2rem, 4.5vw, 4rem);
-      }
-
-      h1 {
-        margin: 0 0 2.1rem;
-        font-size: clamp(5rem, 9vw, 7.5rem);
-        font-weight: 700;
-        letter-spacing: -0.065em;
-        line-height: 0.9;
-      }
-
-      .period {
-        color: #ff1010;
-      }
-
-      p {
-        margin: 0 0 1.8rem;
-        font-size: clamp(1.25rem, 2.4vw, 2rem);
-        line-height: 1.35;
-      }
-
-      a {
-        display: inline-block;
-        color: #ff1010;
-        font-size: clamp(1.25rem, 2.4vw, 2rem);
-        text-decoration: none;
-        text-underline-offset: 0.25em;
-      }
-
-      a:hover,
-      a:focus-visible {
-        text-decoration: underline;
-      }
-
-      a:focus-visible {
-        outline: 3px solid #050505;
-        outline-offset: 6px;
-      }
-
-      @media (max-width: 640px) {
-        main {
-          padding-top: 4rem;
-        }
-
-        .intro {
-          border-left-width: 7px;
-        }
-
-        h1 {
-          margin-bottom: 1.6rem;
-        }
-      }
-    </style>
+    <title>William | Academic &amp; Technical Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <main>
-      <section class="intro" aria-labelledby="page-title">
-        <h1 id="page-title">Hello<span class="period">.</span></h1>
-        <p>I'm William. I am learning HTML, CSS and Python.</p>
-        <a href="https://github.com/google-temp-will" aria-label="Contact William on GitHub">
-          Contact me&nbsp;&rarr;
-        </a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#work">Technical work</a>
+        <a href="#profile">Profile</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a
+        class="header-link"
+        href="https://github.com/google-temp-will"
+        target="_blank"
+        rel="noreferrer"
+      >GitHub ↗</a>
+    </header>
+
+    <main id="main-content">
+      <section class="identity section-shell" id="top" aria-labelledby="page-title">
+        <p class="overline">Academic &amp; Technical Portfolio</p>
+        <h1 id="page-title">William<span>.</span></h1>
+        <p>Python developer · Published researcher · Mechanical engineering undergraduate</p>
+
+        <ul class="achievement-summary" aria-label="Key achievements">
+          <li>
+            <strong>Advanced Python</strong>
+            <span>Programming, problem-solving and automation</span>
+          </li>
+          <li>
+            <strong>Published research</strong>
+            <span>Conference paper author · ICMSC 2024</span>
+          </li>
+          <li>
+            <strong>Mechanical engineering</strong>
+            <span>Undergraduate · Global top-40 university</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="publication section-shell" id="research" aria-labelledby="publication-title">
+        <header class="section-header">
+          <span>01</span>
+          <h2>Primary academic achievement</h2>
+        </header>
+
+        <article class="publication-record">
+          <div class="publication-meta">
+            <p class="record-type">Published conference paper</p>
+            <p>Published · 2024</p>
+          </div>
+
+          <div class="publication-main">
+            <p class="conference">ICMSC 2024</p>
+            <h3 id="publication-title">
+              Performance Comparison between Traditional Internal Combustion Engines and
+              Hybrid Powertrains
+            </h3>
+            <p class="citation">
+              6th International Conference on Mechanics, Simulation and Control
+            </p>
+            <p class="abstract">
+              A comparative study of conventional and hybrid vehicle powertrains,
+              examining energy efficiency, emissions and power output in the context of
+              more sustainable transportation.
+            </p>
+
+            <dl class="publication-details">
+              <div>
+                <dt>Status</dt>
+                <dd>Peer-reviewed and published</dd>
+              </div>
+              <div>
+                <dt>Research area</dt>
+                <dd>Automotive powertrain performance</dd>
+              </div>
+              <div>
+                <dt>Core measures</dt>
+                <dd>Efficiency · Emissions · Power output</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <section class="expertise section-shell" id="expertise" aria-labelledby="expertise-title">
+        <header class="section-header">
+          <span>02</span>
+          <h2 id="expertise-title">Areas of expertise</h2>
+        </header>
+
+        <div class="expertise-list">
+          <article>
+            <span>Programming</span>
+            <h3>Python</h3>
+            <p>
+              Structured programming, problem-solving and automation built around readable,
+              maintainable logic.
+            </p>
+          </article>
+          <article>
+            <span>Digital implementation</span>
+            <h3>Web systems</h3>
+            <p>
+              Semantic HTML, responsive CSS and accessible interface structure developed
+              for reliable use across screen sizes.
+            </p>
+          </article>
+          <article>
+            <span>Engineering research</span>
+            <h3>Comparative analysis</h3>
+            <p>
+              Technical questions structured around measurable variables, defensible
+              comparisons and clearly communicated findings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <header class="section-header">
+          <span>03</span>
+          <h2 id="work-title">Selected technical work</h2>
+        </header>
+
+        <div class="work-list">
+          <article>
+            <div class="work-index">01</div>
+            <div>
+              <h3>Academic portfolio system</h3>
+              <p>
+                A responsive publication and capability profile implemented with semantic
+                HTML and CSS, versioned with Git and deployed through GitHub Pages.
+              </p>
+            </div>
+            <span class="work-status">Live</span>
+          </article>
+          <article>
+            <div class="work-index">02</div>
+            <div>
+              <h3>Version-controlled delivery</h3>
+              <p>
+                A traceable workflow connecting local development, reviewed changes and
+                remote deployment.
+              </p>
+            </div>
+            <span class="work-status">Operational</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="profile section-shell" id="profile" aria-labelledby="profile-title">
+        <header class="section-header">
+          <span>04</span>
+          <h2 id="profile-title">Professional profile</h2>
+        </header>
+
+        <div class="profile-copy">
+          <p class="profile-lead">
+            Mechanical engineering undergraduate at a global top-40 university, with
+            published research and advanced Python capability.
+          </p>
+          <p>
+            My approach combines analytical structure with practical execution: define
+            the question, identify the relevant evidence, build a working solution and
+            communicate the result with precision.
+          </p>
+        </div>
+      </section>
+
+      <section class="approach section-shell" aria-labelledby="approach-title">
+        <header class="section-header">
+          <span>05</span>
+          <h2 id="approach-title">Technical approach</h2>
+        </header>
+
+        <ol class="approach-list">
+          <li><span>01</span><strong>Frame</strong><p>Define the question, constraints and success criteria.</p></li>
+          <li><span>02</span><strong>Analyse</strong><p>Organise variables, evidence and comparison methods.</p></li>
+          <li><span>03</span><strong>Implement</strong><p>Translate the strongest approach into a working result.</p></li>
+          <li><span>04</span><strong>Verify</strong><p>Inspect the evidence, refine the details and document the outcome.</p></li>
+        </ol>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <header class="section-header">
+          <span>06</span>
+          <h2 id="contact-title">Contact</h2>
+        </header>
+
+        <div class="contact-row">
+          <p>Research, engineering and technical collaboration.</p>
+          <a
+            href="https://github.com/google-temp-will"
+            target="_blank"
+            rel="noreferrer"
+          >GitHub profile ↗</a>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <span>William © 2026</span>
+      <span>Academic &amp; Technical Portfolio</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
   </body>
 </html>
