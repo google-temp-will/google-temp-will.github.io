@@ -1,3 +1,106 @@
-<p>hello world</p>
-<p>hi earth</p>
-<p>hey human</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="William's personal learning page for HTML, CSS and Python."
+    >
+    <title>William | Learning HTML, CSS and Python</title>
+
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #050505;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        min-height: 100vh;
+        align-items: flex-start;
+        padding: clamp(4rem, 14vh, 7.25rem) clamp(1.5rem, 10vw, 8.5rem);
+      }
+
+      .intro {
+        width: min(100%, 920px);
+        border-left: 10px solid #ff1010;
+        padding: 0.25rem 0 0.2rem clamp(2rem, 4.5vw, 4rem);
+      }
+
+      h1 {
+        margin: 0 0 2.1rem;
+        font-size: clamp(5rem, 9vw, 7.5rem);
+        font-weight: 700;
+        letter-spacing: -0.065em;
+        line-height: 0.9;
+      }
+
+      .period {
+        color: #ff1010;
+      }
+
+      p {
+        margin: 0 0 1.8rem;
+        font-size: clamp(1.25rem, 2.4vw, 2rem);
+        line-height: 1.35;
+      }
+
+      a {
+        display: inline-block;
+        color: #ff1010;
+        font-size: clamp(1.25rem, 2.4vw, 2rem);
+        text-decoration: none;
+        text-underline-offset: 0.25em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration: underline;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #050505;
+        outline-offset: 6px;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding-top: 4rem;
+        }
+
+        .intro {
+          border-left-width: 7px;
+        }
+
+        h1 {
+          margin-bottom: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">Hello<span class="period">.</span></h1>
+        <p>I'm William. I am learning HTML, CSS and Python.</p>
+        <a href="https://github.com/google-temp-will" aria-label="Contact William on GitHub">
+          Contact me&nbsp;&rarr;
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
